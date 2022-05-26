@@ -6,7 +6,7 @@ stage('Build')
 {
 steps{
 echo "Building the Code.........."
-bat "C:\\Program Files\\apache-maven-3.8.5\\bin\\mvn clean"
+bat 'C:\\Program Files\\apache-maven-3.8.5\\bin\\mvn clean'
 }
 }
 stage('Test') 
