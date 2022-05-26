@@ -5,12 +5,8 @@ stages
 stage('Build') 
 {
 steps{
-echo "BBuilding the Code.........."
-pth 'C:/Program Files/apache-maven-3.8.5/bin/mvn'
-echo $pth
-echo "BBuilding the Code.........."
-
-bat "${pth} clean"
+echo "Building the Code.........."
+bat "mvn clean"
 }
 }
 stage('Test') 
